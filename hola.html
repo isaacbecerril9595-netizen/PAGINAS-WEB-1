@@ -1,149 +1,96 @@
-<html>
-hola mundo
-  <h1>
-</h2> hola mundo </h2>
-    </h1>
-    <h2>
-     hola mundo 3
-    </h2>
----------------
-  </h1>TABLAS</H1>
-<TABLE>
-  TABLE1
-</TABLE>
-</html>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tabla de ejemplo</title>
+    <title>Examen Práctico: Catálogo de Hardware 2026</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            margin: 20px auto;
+        body {
+            background-color: #f4f6f7;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
+            
+        .titulo-principal {
             text-align: center;
+            color: #2980b9;
         }
-        th {
-            background-color: #f2f2f2;
+
+        .tabla-productos {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-productos th, .tabla-productos td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .img-producto {
+            border: 2px dashed #2980b9;
+            border-radius: 8px;
+        }
+
+        .texto-alerta {
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
+
 <body>
 
-    <h2 style="text-align:center;">Tabla de Estudiantes</h2>
+    <h1 class="titulo-principal">Inventario de Componentes Avanzados</h1>
 
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-            <th>Curso</th>
-        </tr>
-        <tr>
-            <td>Ana</td>
-            <td>20</td>
-            <td>Matemáticas</td>
-        </tr>
-        <tr>
-            <td>Carlos</td>
-            <td>22</td>
-            <td>Historia</td>
-        </tr>
-        <tr>
-            <td>María</td>
-            <td>19</td>
-            <td>Biología</td>
-        </tr>
+    <h2>Sección: Procesadores y Memoria</h2>
+
+    <table class="tabla-productos">
+        <thead>
+            <tr style="background-color: #2980b9; color: white;">
+                <th>Vista Previa</th>
+                <th>Descripción del Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td align="center">
+                    <img src="cpu_quantum.jpg" class="img-producto" width="100">
+                </td>
+                <td>
+                    <h3>Procesador Quantum X1</h3>
+                    <p>Arquitectura de 128 núcleos con refrigeración líquida integrada.</p>
+                </td>
+                <td>Hardware</td>
+                <td>$2,450.00</td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <img src="ram_ddr6.jpg" class="img-producto" width="100">
+                </td>
+                <td>
+                    <h3>Memoria RAM DDR6 64GB</h3>
+                    <p class="texto-alerta">¡Últimas unidades disponibles en bodega!</p>
+                </td>
+                <td>Memorias</td>
+                <td>$320.00</td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <img src="ssd_holographic.jpg" class="img-producto" width="100">
+                </td>
+                <td>
+                    <h3>SSD Holográfico 10TB</h3>
+                </td>
+                <td>Almacenamiento</td>
+                <td>$850.00</td>
+            </tr>
+        </tbody>
     </table>
 
 </body>
 </html>
-  <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Tabla sin color</title>
-</head>
-<body>
-
-<h2>Tabla sin color</h2>
-
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-    </tr>
-    <tr><td>1</td><td>Juan</td></tr>
-    <tr><td>2</td><td>Ana</td></tr>
-    <tr><td>3</td><td>Luis</td></tr>
-    <tr><td>4</td><td>María</td></tr>
-    <tr><td>5</td><td>Carlos</td></tr>
-    <tr><td>6</td><td>Sofía</td></tr>
-    <tr><td>7</td><td>Pedro</td></tr>
-    <tr><td>8</td><td>Lucía</td></tr>
-    <tr><td>9</td><td>Diego</td></tr>
-    <tr><td>10</td><td>Elena</td></tr>
-</table>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Tabla con color</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-            padding: 8px;
-        }
-        td {
-            padding: 8px;
-            text-align: center;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #ddd;
-        }
-    </style>
-</head>
-<body>
-
-<h2>Tabla con color</h2>
-
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Producto</th>
-    </tr>
-    <tr><td>1</td><td>Teclado</td></tr>
-    <tr><td>2</td><td>Mouse</td></tr>
-    <tr><td>3</td><td>Monitor</td></tr>
-    <tr><td>4</td><td>CPU</td></tr>
-    <tr><td>5</td><td>Impresora</td></tr>
-    <tr><td>6</td><td>Escáner</td></tr>
-    <tr><td>7</td><td>Tablet</td></tr>
-    <tr><td>8</td><td>Laptop</td></tr>
-    <tr><td>9</td><td>Celular</td></tr>
-    <tr><td>10</td><td>Audífonos</td></tr>
-    <tr><td>11</td><td>Micrófono</td></tr>
-    <tr><td>12</td><td>Cámara</td></tr>
-    <tr><td>13</td><td>Bocinas</td></tr>
-    <tr><td>14</td><td>Proyector</td></tr>
-    <tr><td>15</td><td>Router</td></tr>
-</table>
-
-</body>
-</html>
- 
