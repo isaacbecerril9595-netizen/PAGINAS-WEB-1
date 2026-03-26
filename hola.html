@@ -7,10 +7,10 @@
         body {
             background-color: #f4f6f7;
             color: #333;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 20px;
         }
-            
+
         .titulo-principal {
             text-align: center;
             color: #2980b9;
@@ -19,100 +19,90 @@
         .tabla-productos {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
             background: white;
         }
 
         .tabla-productos th {
             background-color: #2980b9;
             color: white;
-            padding: 12px;
+            padding: 10px;
         }
 
         .tabla-productos td {
             padding: 10px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .tabla-productos tr:hover {
-            background-color: #f2f2f2;
+            border-bottom: 1px solid #ccc;
         }
 
         .img-producto {
-            border: 2px dashed #2980b9;
-            border-radius: 8px;
             width: 100px;
             height: 100px;
             object-fit: cover;
+            border-radius: 8px;
         }
 
         .texto-alerta {
             color: red;
             font-weight: bold;
         }
-
-        .precio {
-            font-weight: bold;
-            color: #27ae60;
-        }
     </style>
 </head>
 
 <body>
 
-    <h1 class="titulo-principal">Inventario de Componentes Avanzados</h1>
-    <h2 style="text-align:center;">Sección: Procesadores y Memoria</h2>
+<h1 class="titulo-principal">Inventario de Componentes Avanzados</h1>
 
-    <table class="tabla-productos">
-        <thead>
-            <tr>
-                <th>Vista</th>
-                <th>Producto</th>
-                <th>Categoría</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
+<h2 style="text-align:center;">Sección: Procesadores y Memoria</h2>
 
-        <tbody>
-            <tr>
-                <td>
-                    <img src="https://via.placeholder.com/100?text=CPU" class="img-producto">
-                </td>
-                <td>
-                    <h3>Procesador Quantum X1</h3>
-                    <p>128 núcleos con refrigeración líquida.</p>
-                </td>
-                <td>Hardware</td>
-                <td class="precio">$2,450.00</td>
-            </tr>
+<table class="tabla-productos">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
 
-            <tr>
-                <td>
-                    <img src="https://via.placeholder.com/100?text=RAM" class="img-producto">
-                </td>
-                <td>
-                    <h3>RAM DDR6 64GB</h3>
-                    <p class="texto-alerta">¡Últimas unidades!</p>
-                </td>
-                <td>Memoria</td>
-                <td class="precio">$320.00</td>
-            </tr>
+    <tbody>
+        <tr>
+            <td>
+                <img src="img/cpu_quantum.jpg" class="img-producto">
+            </td>
+            <td>
+                <h3>Procesador Quantum X1</h3>
+                <p>128 núcleos con refrigeración líquida.</p>
+            </td>
+            <td>Hardware</td>
+            <td>$2,450.00</td>
+        </tr>
 
-            <tr>
-                <td>
-                    <img src="https://via.placeholder.com/100?text=SSD" class="img-producto">
-                </td>
-                <td>
-                    <h3>SSD 10TB</h3>
-                </td>
-                <td>Almacenamiento</td>
-                <td class="precio">$850.00</td>
-            </tr>
-        </tbody>
-    </table>
+        <tr>
+            <td>
+                <img src="img/ram_ddr6.jpg" class="img-producto">
+            </td>
+            <td>
+                <h3>RAM DDR6 64GB</h3>
+                <p class="texto-alerta">¡Últimas unidades!</p>
+            </td>
+            <td>Memoria</td>
+            <td>$320.00</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/ssd_holographic.jpg" class="img-producto">
+            </td>
+            <td>
+                <h3>SSD 10TB</h3>
+            </td>
+            <td>Almacenamiento</td>
+            <td>$850.00</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
 </html>
+
 
