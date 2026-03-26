@@ -2,107 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo de Hardware 2026</title>
+    <title>Catálogo Hardware</title>
     <style>
         body {
+            font-family: Arial;
             background-color: #f4f6f7;
-            color: #333;
-            font-family: Arial, sans-serif;
-            margin: 20px;
         }
 
-        .titulo-principal {
-            text-align: center;
-            color: #2980b9;
-        }
-
-        .tabla-productos {
+        table {
             width: 100%;
             border-collapse: collapse;
             background: white;
         }
 
-        .tabla-productos th {
-            background-color: #2980b9;
+        th {
+            background: #2980b9;
             color: white;
             padding: 10px;
         }
 
-        .tabla-productos td {
+        td {
             padding: 10px;
             text-align: center;
             border-bottom: 1px solid #ccc;
         }
 
-        .img-producto {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .texto-alerta {
-            color: red;
-            font-weight: bold;
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
         }
     </style>
 </head>
 
 <body>
 
-<h1 class="titulo-principal">Inventario de Componentes Avanzados</h1>
+<h1 style="text-align:center;">Inventario de Hardware</h1>
 
-<h2 style="text-align:center;">Sección: Procesadores y Memoria</h2>
+<table>
+    <tr>
+        <th>Imagen</th>
+        <th>Producto</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+    </tr>
 
-<table class="tabla-productos">
-    <thead>
-        <tr>
-            <th>Imagen</th>
-            <th>Producto</th>
-            <th>Categoría</th>
-            <th>Precio</th>
-        </tr>
-    </thead>
+    <tr>
+        <td><img src="cpu.png"></td>
+        <td>Procesador Quantum X1</td>
+        <td>Hardware</td>
+        <td>$2,450</td>
+    </tr>
 
-    <tbody>
-        <tr>
-            <td>
-                <img src="img/cpu_quantum.jpg" class="img-producto">
-            </td>
-            <td>
-                <h3>Procesador Quantum X1</h3>
-                <p>128 núcleos con refrigeración líquida.</p>
-            </td>
-            <td>Hardware</td>
-            <td>$2,450.00</td>
-        </tr>
+    <tr>
+        <td><img src="ram.png"></td>
+        <td>Memoria RAM DDR6</td>
+        <td>Memoria</td>
+        <td>$320</td>
+    </tr>
 
-        <tr>
-            <td>
-                <img src="img/ram_ddr6.jpg" class="img-producto">
-            </td>
-            <td>
-                <h3>RAM DDR6 64GB</h3>
-                <p class="texto-alerta">¡Últimas unidades!</p>
-            </td>
-            <td>Memoria</td>
-            <td>$320.00</td>
-        </tr>
+    <tr>
+        <td><img src="ssd.png"></td>
+        <td>SSD 10TB</td>
+        <td>Almacenamiento</td>
+        <td>$850</td>
+    </tr>
 
-        <tr>
-            <td>
-                <img src="img/ssd_holographic.jpg" class="img-producto">
-            </td>
-            <td>
-                <h3>SSD 10TB</h3>
-            </td>
-            <td>Almacenamiento</td>
-            <td>$850.00</td>
-        </tr>
-    </tbody>
 </table>
 
 </body>
 </html>
-
-
